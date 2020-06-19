@@ -17,7 +17,22 @@ namespace SiebelQueueMonitor
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManage_Consultants_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
         {
 
         }

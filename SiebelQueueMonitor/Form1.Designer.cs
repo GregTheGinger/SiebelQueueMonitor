@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.toolbar = new System.Windows.Forms.Panel();
+            this.selectedMarker = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
+            this.btnManage_Consultants = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.toolbar.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -55,67 +56,96 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // toolbar
             // 
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(166, 727);
-            this.panel1.TabIndex = 4;
+            this.toolbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(117)))));
+            this.toolbar.Controls.Add(this.selectedMarker);
+            this.toolbar.Controls.Add(this.btnSettings);
+            this.toolbar.Controls.Add(this.btnReports);
+            this.toolbar.Controls.Add(this.btnManage_Consultants);
+            this.toolbar.Controls.Add(this.btnDashboard);
+            this.toolbar.Controls.Add(this.panel2);
+            this.toolbar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.toolbar.Location = new System.Drawing.Point(0, 0);
+            this.toolbar.Name = "toolbar";
+            this.toolbar.Size = new System.Drawing.Size(166, 727);
+            this.toolbar.TabIndex = 4;
             // 
-            // button4
+            // selectedMarker
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(0, 191);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(163, 79);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Reports";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.selectedMarker.BackColor = System.Drawing.Color.White;
+            this.selectedMarker.Location = new System.Drawing.Point(159, 119);
+            this.selectedMarker.Name = "selectedMarker";
+            this.selectedMarker.Size = new System.Drawing.Size(7, 72);
+            this.selectedMarker.TabIndex = 4;
             // 
-            // button2
+            // btnSettings
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(0, 276);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 79);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Manage Consultants";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.Location = new System.Drawing.Point(0, 636);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(163, 79);
+            this.btnSettings.TabIndex = 3;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // button5
+            // btnReports
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(0, 119);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(163, 79);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Dashboard";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnReports.FlatAppearance.BorderSize = 0;
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReports.ForeColor = System.Drawing.Color.White;
+            this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
+            this.btnReports.Location = new System.Drawing.Point(0, 191);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(163, 79);
+            this.btnReports.TabIndex = 1;
+            this.btnReports.Text = "Reports";
+            this.btnReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
+            // 
+            // btnManage_Consultants
+            // 
+            this.btnManage_Consultants.FlatAppearance.BorderSize = 0;
+            this.btnManage_Consultants.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManage_Consultants.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManage_Consultants.ForeColor = System.Drawing.Color.White;
+            this.btnManage_Consultants.Image = ((System.Drawing.Image)(resources.GetObject("btnManage_Consultants.Image")));
+            this.btnManage_Consultants.Location = new System.Drawing.Point(0, 276);
+            this.btnManage_Consultants.Name = "btnManage_Consultants";
+            this.btnManage_Consultants.Size = new System.Drawing.Size(163, 79);
+            this.btnManage_Consultants.TabIndex = 1;
+            this.btnManage_Consultants.Text = "Manage Consultants";
+            this.btnManage_Consultants.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnManage_Consultants.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnManage_Consultants.UseVisualStyleBackColor = true;
+            this.btnManage_Consultants.Click += new System.EventHandler(this.btnManage_Consultants_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.Location = new System.Drawing.Point(0, 119);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(163, 79);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // panel2
             // 
@@ -128,22 +158,6 @@
             this.panel2.Size = new System.Drawing.Size(166, 76);
             this.panel2.TabIndex = 0;
             // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(0, 636);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(163, 79);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Settings";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -151,7 +165,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1333, 727);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.toolbar);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
@@ -160,7 +174,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Queue Monitor";
-            this.panel1.ResumeLayout(false);
+            this.toolbar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -168,12 +182,13 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel toolbar;
+        private System.Windows.Forms.Button btnReports;
+        private System.Windows.Forms.Button btnManage_Consultants;
+        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Panel selectedMarker;
     }
 }
 
