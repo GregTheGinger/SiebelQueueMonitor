@@ -59,7 +59,6 @@
             // toolbar
             // 
             this.toolbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(117)))));
-            this.toolbar.Controls.Add(this.selectedMarker);
             this.toolbar.Controls.Add(this.btnSettings);
             this.toolbar.Controls.Add(this.btnReports);
             this.toolbar.Controls.Add(this.btnManage_Consultants);
@@ -74,7 +73,7 @@
             // selectedMarker
             // 
             this.selectedMarker.BackColor = System.Drawing.Color.White;
-            this.selectedMarker.Location = new System.Drawing.Point(159, 119);
+            this.selectedMarker.Location = new System.Drawing.Point(165, 126);
             this.selectedMarker.Name = "selectedMarker";
             this.selectedMarker.Size = new System.Drawing.Size(7, 72);
             this.selectedMarker.TabIndex = 4;
@@ -103,7 +102,7 @@
             this.btnReports.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.Color.White;
             this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
-            this.btnReports.Location = new System.Drawing.Point(0, 191);
+            this.btnReports.Location = new System.Drawing.Point(0, 197);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(163, 79);
             this.btnReports.TabIndex = 1;
@@ -120,7 +119,7 @@
             this.btnManage_Consultants.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManage_Consultants.ForeColor = System.Drawing.Color.White;
             this.btnManage_Consultants.Image = ((System.Drawing.Image)(resources.GetObject("btnManage_Consultants.Image")));
-            this.btnManage_Consultants.Location = new System.Drawing.Point(0, 276);
+            this.btnManage_Consultants.Location = new System.Drawing.Point(0, 282);
             this.btnManage_Consultants.Name = "btnManage_Consultants";
             this.btnManage_Consultants.Size = new System.Drawing.Size(163, 79);
             this.btnManage_Consultants.TabIndex = 1;
@@ -165,6 +164,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1333, 727);
             this.ControlBox = false;
+            this.Controls.Add(this.selectedMarker);
             this.Controls.Add(this.toolbar);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
