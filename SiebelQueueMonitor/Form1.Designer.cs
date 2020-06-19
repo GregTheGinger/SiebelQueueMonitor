@@ -59,6 +59,7 @@
             // toolbar
             // 
             this.toolbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(117)))));
+            this.toolbar.Controls.Add(this.selectedMarker);
             this.toolbar.Controls.Add(this.btnSettings);
             this.toolbar.Controls.Add(this.btnReports);
             this.toolbar.Controls.Add(this.btnManage_Consultants);
@@ -73,7 +74,7 @@
             // selectedMarker
             // 
             this.selectedMarker.BackColor = System.Drawing.Color.White;
-            this.selectedMarker.Location = new System.Drawing.Point(165, 126);
+            this.selectedMarker.Location = new System.Drawing.Point(159, 119);
             this.selectedMarker.Name = "selectedMarker";
             this.selectedMarker.Size = new System.Drawing.Size(7, 72);
             this.selectedMarker.TabIndex = 4;
@@ -164,7 +165,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1333, 727);
             this.ControlBox = false;
-            this.Controls.Add(this.selectedMarker);
             this.Controls.Add(this.toolbar);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
