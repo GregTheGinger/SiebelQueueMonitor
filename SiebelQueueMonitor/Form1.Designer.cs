@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.toolbar = new System.Windows.Forms.Panel();
@@ -37,6 +38,9 @@
             this.btnManage_Consultants = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.clock = new System.Windows.Forms.Timer(this.components);
+            this.clockDisplay = new System.Windows.Forms.Label();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.toolbar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,24 +162,52 @@
             this.panel2.Size = new System.Drawing.Size(166, 76);
             this.panel2.TabIndex = 0;
             // 
+            // clock
+            // 
+            this.clock.Interval = 1000;
+            this.clock.Tick += new System.EventHandler(this.clock_Tick);
+            // 
+            // clockDisplay
+            // 
+            this.clockDisplay.AutoSize = true;
+            this.clockDisplay.Location = new System.Drawing.Point(172, 9);
+            this.clockDisplay.Name = "clockDisplay";
+            this.clockDisplay.Size = new System.Drawing.Size(118, 21);
+            this.clockDisplay.TabIndex = 5;
+            this.clockDisplay.Text = "HH:MM:SS AM";
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.AutoSize = true;
+            this.panelChildForm.Location = new System.Drawing.Point(176, 33);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(1145, 682);
+            this.panelChildForm.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1333, 727);
-            this.ControlBox = false;
+            this.Controls.Add(this.panelChildForm);
+            this.Controls.Add(this.clockDisplay);
             this.Controls.Add(this.toolbar);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1349, 766);
+            this.MinimumSize = new System.Drawing.Size(1349, 766);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Queue Monitor";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.toolbar.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -189,6 +221,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Panel selectedMarker;
+        private System.Windows.Forms.Timer clock;
+        private System.Windows.Forms.Label clockDisplay;
+        private System.Windows.Forms.Panel panelChildForm;
     }
 }
 
