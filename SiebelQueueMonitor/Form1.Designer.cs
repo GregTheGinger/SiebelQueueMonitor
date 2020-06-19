@@ -103,7 +103,7 @@
             this.btnReports.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.Color.White;
             this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
-            this.btnReports.Location = new System.Drawing.Point(0, 197);
+            this.btnReports.Location = new System.Drawing.Point(0, 204);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(163, 79);
             this.btnReports.TabIndex = 1;
@@ -120,7 +120,7 @@
             this.btnManage_Consultants.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManage_Consultants.ForeColor = System.Drawing.Color.White;
             this.btnManage_Consultants.Image = ((System.Drawing.Image)(resources.GetObject("btnManage_Consultants.Image")));
-            this.btnManage_Consultants.Location = new System.Drawing.Point(0, 282);
+            this.btnManage_Consultants.Location = new System.Drawing.Point(0, 289);
             this.btnManage_Consultants.Name = "btnManage_Consultants";
             this.btnManage_Consultants.Size = new System.Drawing.Size(163, 79);
             this.btnManage_Consultants.TabIndex = 1;
