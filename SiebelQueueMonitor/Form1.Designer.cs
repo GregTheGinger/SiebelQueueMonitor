@@ -178,7 +178,6 @@
             // 
             // panelChildForm
             // 
-            this.panelChildForm.AutoSize = true;
             this.panelChildForm.Location = new System.Drawing.Point(176, 33);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(1145, 682);
@@ -190,6 +189,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1333, 727);
+            this.ControlBox = false;
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.clockDisplay);
             this.Controls.Add(this.toolbar);
